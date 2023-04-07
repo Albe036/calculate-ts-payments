@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Mortgage Calculator</h1>
+      </header>
+      <main>
+        <div class="container-row-one">
+          <section class="container-input">
+            <label for="">Sales price ($)</label>
+            <input id="sales-price" type="text" placeholder="$0" value="500000"/>
+          </section>
+          <section class="container-input">
+            <label for="">Down payment (%)</label>
+            <input id="down-payment" type="text" placeholder="0%" value="5"/>
+          </section>
+          <section class="container-input">
+            <label for="">Interest rate (%)</label>
+            <input id="int-rate" type="text"  placeholder="0%" value="6.5"/>
+          </section>
+          <button id="calcValues">Calculate now!</button>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in
+            congue tortor. Proin vitae iaculis leo. Proin eu eros sed magna
+            bibendum vehicula. Suspendisse gravida sem eget imperdiet maximus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            imperdiet viverra interdum.
+          </p>
+        </div>
+        <div class="container-row-two">
+          <section class="container-result-calc">
+            <p>Interest Rate</p>
+            <h1 id="res-interest">$0</h1>
+          </section>
+          <section class="container-result-calc">
+            <p>Insurance</p>
+            <h1 id="res-insurance">$0</h1>
+          </section>
+          <section class="container-result-calc">
+            <p>Mortgage insurance</p>
+            <h1 id="res-mortgage">$0</h1>
+          </section>
+          <section class="container-result-calc">
+            <p>Total Payment</p>
+            <h1 id="res-totalPay">$0</h1>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
